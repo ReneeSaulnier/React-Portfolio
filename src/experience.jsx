@@ -5,16 +5,16 @@ export default function Experience() {
     const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
     const table = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/table/model.gltf')
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
-    const reactSymbol = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
+    // const reactSymbol = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
     const duck = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/duck/model.gltf')
-    const cactus = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/cactus/model.gltf')
+    // const cactus = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/cactus/model.gltf')
     
     
-    reactSymbol.scene.traverse((child) => {
-        if (child.isMesh) {
-            child.material = new THREE.MeshStandardMaterial({ color: '#61dbfb' })
-        }
-    });
+    // reactSymbol.scene.traverse((child) => {
+    //     if (child.isMesh) {
+    //         child.material = new THREE.MeshStandardMaterial({ color: '#61dbfb' })
+    //     }
+    // });
     
     return <>
 
@@ -69,20 +69,20 @@ export default function Experience() {
                     rotation={ [0, -0.3, 0]} 
                     scale={ [0.17, 0.17, 0.17] }
                 /> 
-                <primitive 
+                {/* <primitive 
                     object={ cactus.scene } 
                     position={ [-1.2, 0.15, -0.25] } 
                     rotation={ [0, 0.3, 0]} 
                     scale={ [0.13, 0.13, 0.13] } 
-                />
+                /> */}
                 
-                <Float>
+                {/* <Float>
                     <primitive 
                         object={ reactSymbol.scene } 
                         position={ [0, 0.9, -1] } 
                         scale={ [0.25, 0.25, 0.25]}
                     />
-                </Float>
+                </Float> */}
                     <Text 
                         font="./JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf" 
                         fontSize={ 0.18 }
