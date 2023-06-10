@@ -1,9 +1,8 @@
-import {Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
-import * as THREE from 'three'
+import {Text, Html, ContactShadows, PresentationControls, Environment, useGLTF } from '@react-three/drei'
 
 export default function Experience() {
     const computer = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf')
-    const table = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/table/model.gltf')
+    // const table = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/table/model.gltf')
     const phone = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/iphone-x/model.gltf')
     // const reactSymbol = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/react-logo/model.gltf')
     const duck = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/duck/model.gltf')
@@ -52,11 +51,11 @@ export default function Experience() {
                         <iframe src="https://projectcv.vercel.app/" title="Resume" />
                     </Html>
                 </primitive>
-                <primitive 
+                {/* <primitive 
                     object={ table.scene }
                     position-y={ -1.2 } 
                     scale={ [0.8, 0.8, 0.8] } 
-                />
+                /> */}
                 <primitive 
                     object={ phone.scene } 
                     position={ [-0.9, 0.15, 0.2] } 

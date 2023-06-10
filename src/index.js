@@ -1,19 +1,10 @@
-import './style.css'
-import ReactDOM from 'react-dom/client'
-import { Canvas } from '@react-three/fiber'
-import Experience from './experience.jsx'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-const root = ReactDOM.createRoot(document.querySelector('#root'))
+const container = document.getElementById('root');
+const root = createRoot(container);
 
 root.render(
-    <Canvas
-        camera={ {
-            fov: 45,
-            near: 0.1,
-            far: 2000,
-            position: [ -3, 1.5, 4 ]
-        } }
-    >
-        <Experience />
-    </Canvas>
-)
+    <App />
+);
